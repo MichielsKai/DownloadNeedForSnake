@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Need For Snake</title>
+
+  <style>
+    :root {
+      --bg: #0f1220;
+      --card: #181c36;
+      --accent: #6c8cff;
+      --text: #e6e8ff;
+      --muted: #aab0ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1b1f44, var(--bg));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+    }
+
+    .card {
+      background: var(--card);
+      max-width: 420px;
+      width: 100%;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    /* Logo styling */
+    .logo {
+      width: 96px;
+      height: auto;
+      margin: 0 auto 1.25rem;
+      display: block;
+      filter:
+        drop-shadow(0 0 8px rgba(255, 255, 255, 0.35))
+        drop-shadow(0 0 24px rgba(108, 140, 255, 0.25));
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--accent), #8fa2ff);
+      color: #0b0d1a;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.9rem 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 20px rgba(108, 140, 255, 0.4);
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(108, 140, 255, 0.6);
+    }
+
+    .platform {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #7f86ff;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Logo -->
+    <img src="logo.png" alt="Game logo" class="logo" />
+
+    <h1>Need For Snake</h1>
+    <p>
+      Snake, but actually stupidly difficult.
+    </p>
+
+    <a class="download-btn" href="NeedForSnake.dmg">
+      ⬇ Download for macOS
+    </a>
+
+    <div class="platform">
+      macOS only (Apple Silicon & Intel)
+    </div>
+
+    <footer>
+      © 2026 Kai Michiels
+    </footer>
+  </div>
+</body>
+</html>
